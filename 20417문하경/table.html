@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>표 태그</title>
+    <style>
+        table, th, td{
+            
+            border: 1px solid black; /*선 두께 1px, 선 색 검정*/
+            border-collapse: collapse; /*이중테두리가 발생하지 않도록 지정*/
+        }
+        th, td{
+                background-color: #96d4d4;
+                 /* 여백 */
+                padding-top: 5px;      /* 위 */
+                padding-bottom: 20px;  /*  아래 */
+                padding-left: 30px;    /* 왼쪽 */
+                padding-right: 40px;   /* 오른쪽 */
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+        </tr>
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+        
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+        </tr>
+    </table>
+</body>
+</html>
