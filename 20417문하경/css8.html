@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>글자</title>
+    <style>
+        body{background: url(images/bg-2.jpg) no-repeat fixed; background-size: cover; text-align: center;}
+        h1{font-size: 180px; color: rgba(246, 250, 21, 0.5); font-family: 'Bauhaus 93';}/*←폰트 바꾸기*/
+
+        p{width: 410px; border: 1px solid #9cf1dc; padding: 10px; margin: 15px;/*줄간격*/ font-size: 1.1em;/*< 1.1배*/ color: white;}
+        .center{text-align: center; color: white;}
+        .justify{text-align: justify; color: white;}
+
+        h3{font-size: 60px;  border: 1px solid #9cf1dc; padding: 10px; margin: 15px;}
+        .shadow1{color: red; text-shadow: 1px/*가로거리*/ 1px/*세로거리*/ black/*색상*/;}
+        .shadow2{text-shadow: 5px 5px 3px/*번짐정도*/ #ffa500;}
+        .shadow3{color: #fff; text-shadow: 7px -7px/*음수는 왼쪽위*/ 20px #ff0;}
+
+        .trans1{text-transform: capitalize; /*첫글자를 대문자로*/}
+        .trans2{text-transform: uppercase;/*모든 글자 대문자로*/}
+        .trans3{text-transform: lowercase;/*모든 글자를 소문자로*/}
+
+        .spacing1{letter-spacing: 0.2em;}/*글자 간격 0.2em*/
+        .spacing2{letter-spacing: 0.5em;}/*글자 간격 0.5em*/
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+
+    <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다. 레드향은 한라봉과 귤을 교배 한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    <p class="center">껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다. 레드향은 한라봉과 귤을 교배 한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    <p class="justify">껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다. 레드향은 한라봉과 귤을 교배 한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    
+    <h2 style="color: white;">text-decoration 속성</h2>
+    <p style="text-decoration: none;">none</p>
+    <p style="text-decoration: underline;">underline</p>
+    <p style="text-decoration: overline;">overline</p>
+    <p style="text-decoration: line-through;">line through</p>
+
+    <h2 style="color: white;">text-shadow 속성</h2>
+    <h3 class="shadow1">HTML</h3>
+    <h3 class="shadow2">CSS</h3>
+    <h3 class="shadow3">자바스크립트</h3>
+
+    <h2 style="color: white;">text-transform 속성</h2>
+    <p class="trans1">html</p>
+    <p class="trans2">css</p>
+    <p class="trans3">JAVASCRIPT</p>
+
+    <h2 style="color: white;">letter-spacing 속성</h2>
+    <p>CSS</p>
+    <p class="spacing1">CSS</p>
+    <p class="spacing2">CSS</p>
+</body>
+</html>
