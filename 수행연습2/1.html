@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>관람요금</title>
+    <style>
+        table{caption-side: bottom; border: 2px solid black; border-collapse: collapse;}
+        tr, th, td{border: 1px dotted black; font-size: 20px; padding: 20px;}
+        caption{text-align: right;}
+        .one{background-color: aquamarine;}
+        .two{background-color: aqua;}
+    </style>
+</head>
+<body>
+    <h2>관람요금</h2>
+    <table>
+        <caption>단체할인가능</caption>
+        <tr class="one">
+            <th colspan="2">구분</th>
+            <th>개인</th>
+        </tr>
+        <tr>
+            <th rowspan="3" class="two">관람료</th>
+            <td>어른</td>
+            <td>11,000원</td>
+        </tr>
+        <tr>
+            <td>초중고</td>
+            <td rowspan="2">8,000원</td>
+        </tr>
+        <tr>
+            <td>장애인</td>
+        </tr>
+    </table>
+</body>
+</html>

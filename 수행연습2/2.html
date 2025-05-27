@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <style>
+        .accent{color: red;}
+    </style>
+</head>
+<body>
+    <h1><span class="accent">회원가입</span>을 환영합니다.</h1>
+    <form>
+        <fieldset style="width: 400px;">
+            <legend>사용자정보</legend>
+
+            <label for="id">아이디</label>
+            <input type="text" id="id" autofocus><br><br>
+            
+            <label for="pw">비밀번호</label>
+            <input type="password" id="pw" placeholder="영문숫자포함8자이상"><br><br>
+
+            <label for="name">이름</label>
+            <input type="text" id="name"><br><br>
+
+            <label for="gen">성별</label>
+            <input type="radio" name="gen">남자
+            <input type="radio" name="gen">여자<br><br>
+
+            <label for="rkdlq">가입동기</label>
+            <textarea id="rkdlq" cols="60" rows="4" placeholder="가입동기를 간략히 써 주세요."></textarea>
+
+            <input type="submit" value="제출하기">
+            <input type="reset" value="다시쓰기">
+        </fieldset>
+    </form>
+</body>
+</html>
