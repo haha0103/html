@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css박스2</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            display: inline-block; /* 상자 옆으로 */
+            margin: 15px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 100px;
+            border-width: 5px;
+        }
+        .box1{border-style: solid;}
+        .box2{border-style: dotted;}
+        .box3{border-style: dashed;}
+
+        .box4{border-width: 2px; border-style: solid;}
+        .box5{border-width: thick thin; border-style: solid;}
+        .box6{border-width: thick thin thin; border-style: solid;}
+        .box7{border-width: 10px 5px 5px 10x; border-style: solid;}
+
+        .round {border-radius: 20px;}
+        .clrcle{border-radius: 50%; box-shadow: 5px 5px 30px 2px black;} /* 가로 세로 번짐정도 불투명도 */
+    </style>
+</head>
+<body>
+    <div class="box1">실선 테두리</div>
+    <div class="box2">점선 테두리</div>
+    <div class="box3">점선 테두리</div>
+
+    <div class="box4"></div>    
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>    
+
+    <img src="images/cat2.jpg">
+    <img class="round" src="images/cat2.jpg">
+    <img src="images/photo.jpg">
+    <img class="clrcle" src="images/photo.jpg">
+</body>
+</html>

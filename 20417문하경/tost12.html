@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실습10-3</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap);
+
+        fieldset{margin: 15px 10px; padding: 20px 100px;}
+        #subj{text-align: center;}
+        .reg{
+            color: darkblue;
+            width: 100px;
+            display: inline-block;
+            font-family: 'Nanum pen Script', cursive;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>여름방학 특강</h1>
+
+    <form>
+        <fieldset>
+            <legend>수강과목</legend>
+            <label>영어회하(초급)</label>
+            <input type="text" id="subj" value="오전 9:00~11:00" readonly>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>신청자</legend>
+            <p>
+            <label class="reg">이름</label>
+            <input type="text" size="20" placeholder="공백없이 입력" autofocus>
+            <p>         
+            <label class="reg">학번</label>
+            <input type="text" size="5" placeholder="5자리학번" autocomplete="off" maxlength="5" required>
+            <p>
+            <label class="reg">희망강사명</label>
+            <input type="text" size="12" id="subj">
+            <p>
+            <label class="reg">희망지역</label>
+            <select>
+                <option>서울</option>
+                <option>경기</option>
+                <option>제주도</option>
+            </select>
+            </p>
+            <input type="submit" value="제출">
+        </fieldset>
+    </form>
+</body>
+</html>

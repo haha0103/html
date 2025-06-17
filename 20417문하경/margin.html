@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin</title>
+    <style>
+        *{box-sizing: border-box;}
+        div{width: 200px; height: 100px; margin: 30px;}
+        #box1{background-color: red;}
+        #box2{background-color: green;}
+        #box3{background-color: blue;}
+
+        #wrapper{width: 210px; margin: 10px auto;}
+        button{padding: 10px 20px; margin: 10px; border: 1px solid #ccc; border-radius: 25px;}
+        
+        button:active {
+        background-color: #d0d0d0;
+        box-shadow: 0 2px #666;
+        transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>    
+    <div id="box2"></div>
+    <div id="box3"></div>    
+
+    <div id="wrapper">
+        <button>버튼1</button>
+        <button>버튼2</button>
+    </div>
+</body>
+</html>
