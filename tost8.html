@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실습 8</title>
+    <style media="screen">
+        caption{
+            font-weight: bold; font-size: 20px; background-color: #ccffee; padding: 8px;
+        }
+        table{
+            background-image:url(images/bg.jpg);
+        }
+        .second{
+            padding-left: 9px;
+        } 
+        dt{/* 글자 맞춤 */
+            display: inline; font-weight: bold; background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>고양이 PROFILE</caption>
+        <tr>
+            <td><img src="images/cat.jpg" alt="고양이" width="250px" height="250px"></td>
+            <td class="second"> 
+                <dl> <!-- 정의 목록 태그 -->
+                    <dt>출생</dt> <!-- 정의 용어 태그 -->
+                    <dd>2020년 2월 10일, 경기도 수원시</dd> <!-- 정의 설명 태그 -->
+                    <dt>신체</dt>
+                    <dd>20.8cm, 12kg</dd>
+                    <dt>특징</dt>
+                    <dd>
+                        눈 색은 푸르스름한 회색빛을 띤다.<br>
+                        몸통은 배 부분이 약간 두터우며 목이 짧다.<br>
+                        뒷다리가 앞다리보다 길고 꼬리는 몸의 길이에 비해 짧은 편이다.
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

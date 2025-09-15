@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btfunction1(){alert('3초가 지났습니다.');}
+    </script>
+</head>
+<body>
+    <button onclick="setTimeout(btfunction1,3000)">버튼클릭(3초뒤실행)1</button><br><br>
+
+    <p id="msg">여기 글자가 바뀔 거예요.</p>
+    <button onclick="setTimeout(btfunction2,3000)">버튼클릭(3초뒤실행)2</button><br><br>
+
+    <button onclick="setTimeout(btfunction3,3000)">버튼클릭(3초뒤실행)3</button><br><br>
+    <script>
+        x=3;
+        str="자바스크립트변수";
+        document.write("x변수의 담긴값은 = "+x+" 입니다.");
+        document.write("<br>");
+        document.write(str);
+        document.write("<br>");
+        document.write("<br>");
+
+        alert("Hello World");
+
+        function btfunction2(){
+            document.getElementById("msg").innerText="3초 실행완료!";
+        }
+        document.write("<br>");
+
+        function btfunction3(){
+            document.body.style.backgroundColor="lightblue"
+        }
+        document.write("<br>");
+    </script>
+</body>
+</html>

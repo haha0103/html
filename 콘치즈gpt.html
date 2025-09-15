@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>콘치즈 레시피</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #ff4b2b;
+      margin: 30px 0;
+      text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+      animation: pulse 2s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      list-style: none;
+      padding: 15px;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      backdrop-filter: blur(5px);
+    }
+
+    ul li {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    ul li:hover {
+      background: linear-gradient(45deg, #ff4b2b, #ff416c);
+      color: white;
+      transform: translateY(-3px) scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      animation: fadeInUp 1.2s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .recipe-header {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .recipe-header img {
+      flex: 1 1 300px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .recipe-header img:hover {
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    .description {
+      flex: 1 1 300px;
+      font-size: 1.1em;
+      line-height: 1.8;
+      background: #fff7f0;
+      padding: 20px;
+      border-radius: 15px;
+      border-left: 5px solid #ff4b2b;
+      box-shadow: inset 0 0 10px rgba(255,200,200,0.3);
+    }
+
+    .steps {
+      padding: 25px;
+      font-size: 1.05em;
+      line-height: 1.8;
+    }
+
+    .steps h3 {
+      margin-bottom: 15px;
+      color: #ff416c;
+      text-shadow: 1px 1px 6px rgba(255,200,200,0.5);
+    }
+
+    .steps p {
+      margin: 10px 0;
+      padding: 12px 15px;
+      border-radius: 10px;
+      background: #fff0f5;
+      border-left: 6px solid #ff4b2b;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .steps p:hover {
+      transform: translateX(8px);
+      background: #ffe6ec;
+    }
+  </style>
+</head>
+<body>
+  <h2>✨ ♥ 콘치즈 만드는 법 ♥ ✨</h2>
+
+  <ul>
+    <li>🍳 요리재료</li>
+    <li>📖 기본정보</li>
+    <li>🥄 요리과정</li>
+    <li>❄ 보관법</li>
+    <li>💪 영양성분</li>
+  </ul>
+
+  <div class="container">
+    <div class="recipe-header">
+      <img src="images/콘치즈.JPG" alt="콘치즈" width="300">
+      <div class="description">
+        식당에 가면 잘 나오는 아이들이 좋아하는 메뉴인 콘치즈 입니다.<br>
+        치즈가 쭉 늘어나는 모습이 보기에도 맛있어 보이네요.<br>
+        고소하고 달콤한 콘치즈! 어른 아이 할 것 없이 누구에게나 사랑받는 메뉴입니다.
+      </div>
+    </div>
+
+    <div class="steps">
+      <h3>[ 🍴 요리과정 ]</h3>
+      <p>01. <b>통조림 옥수수</b>와 <b>통조림 완두콩</b>은 체에 밭쳐 물기를 뺀다.<br>홍피망은 굵게 다진다.<br>볼에 옥수수, 완두콩, 홍피망을 넣고 소금, 후춧가루로 간한다.</p>
+      <p>02. 01에 마요네즈, 설탕을 넣고 골고루 섞는다.</p>
+      <p>03. 오븐용기에 02를 담고 슈레드 피자치즈를 올린다.<br><b><em>180℃</em></b> 온도에서 치즈가 노릇노릇하게 녹을 때까지 굽는다.</p>
+    </div>
+  </div>
+</body>
+</html>

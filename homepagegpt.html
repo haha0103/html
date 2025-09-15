@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #e8fff1; /* 연한 초록 */
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background-color: #b6f0c5;
+            height: 60px;
+            padding: 10px;
+        }
+        #header h1 {
+            margin: 0;
+            color: #0b6623; /* 진한 초록 */
+        }
+
+        #nav {
+            background-color: #71ccf7; /* 파랑 */
+            height: 40px;
+            line-height: 40px;
+            color: white;
+            padding-left: 10px;
+        }
+        #nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #nav a:hover {
+            color: #5962b3; /* 연한 초록으로 변함 */
+        }
+
+        /* wrap을 flex로 변경 */
+        #wrap {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        #aside {
+            background-color: #aad6cc; /* 밝은 초록 */
+            width: 180px;
+            border-radius: 12px 0 0 12px; /* 왼쪽만 둥글게 */
+            padding: 15px;
+        }
+        #aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #aside li {
+            margin: 8px 0;
+            color: rgb(0, 0, 0);
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        #aside li:hover {
+            color: #49a0a7; /* 연한 초록으로 변함 */
+        }
+
+        #section {
+            background-color: #b1e9e4; /* 연한 파랑 */
+            flex: 1;
+            border-radius: 0 12px 12px 0; /* 오른쪽만 둥글게 */
+            padding: 20px;
+        }
+
+        #footer {
+            background-color: #2563eb; /* 진한 파랑 */
+            height: 30px;
+            text-align: center;
+            color: white;
+            line-height: 30px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><h1>평촌경영고등학교</h1></div>
+    <div id="nav">
+        <a href="#">학교소개</a> |
+        <a href="#">입학안내</a> |
+        <a href="#">교육활동</a> |
+        <a href="#">진로</a> |
+        <a href="#">알림마당</a> |
+        <a href="#">도제학교</a> |
+        <a href="#">열린학교</a>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <ul>
+                <li>학교장 인사말<hr></li>
+                <li>비전<hr></li>
+                <li>학교연혁<hr></li>
+                <li>학교현황<hr></li>
+                <li>학교상징<hr></li>
+                <li>교직원 소개<hr></li>
+                <li>찾아오시는 길</li>
+            </ul>
+        </div>
+        <div id="section">
+            <h2>평촌경영고등학교의 VISION</h2>
+            <h3>회계금융분야, AI분야, 미디어분야, 제과제빵분야, 외식조리분야, 디자인분야의 창의적인 인재를 키우는 학교입니다.</h3>
+            경진대회, 방과후수업, 기업채견학 등 전문분야 자격증 취득 및 다양한<br>
+            체험을 바탕으로 SMART한 인재를 배출하고 있습니다.
+            <h3>소통하고 협력하는 교육을 통하여 신뢰받는 학교입니다.</h3>
+            지역사회, 산업체, 학부모가 열린 마음으로<br>
+            소통하고 협력하여 신뢰받는 학교로 변화해 가고 있습니다.
+        </div>
+    </div>
+    <div id="footer">
+        Copyright ⓒ 평촌경영고등학교. All Rights Reserved
+    </div>
+</body>
+</html>

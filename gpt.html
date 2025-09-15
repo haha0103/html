@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>진짜 버튼 찾기</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .guess-button {
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ddd;
+      cursor: pointer;
+    }
+
+    .guess-button:hover {
+      background-color: #ccc;
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>진짜 버튼을 찾아보세요!</h1>
+
+  <div class="button-container" id="buttons"></div>
+
+  <div id="message"></div>
+
+  <script>
+    const buttonCount = 30; // 버튼 개수
+    const realIndex = Math.floor(Math.random() * buttonCount); // 진짜 버튼 인덱스
+
+    const buttonsDiv = document.getElementById("buttons");
+    const messageDiv = document.getElementById("message");
+
+    for (let i = 0; i < buttonCount; i++) {
+      const btn = document.createElement("button");
+      btn.innerText = "버튼";
+      btn.className = "guess-button";
+
+      btn.addEventListener("click", () => {
+        if (i === realIndex) {
+          messageDiv.innerText = "🎉 정답입니다!";
+          btn.style.backgroundColor = "#4CAF50";
+          btn.style.color = "white";
+        } else {
+          messageDiv.innerText = "❌ 틀렸습니다! 다시 시도해보세요.";
+        }
+      });
+
+      buttonsDiv.appendChild(btn);
+    }
+  </script>
+
+</body>
+</html>

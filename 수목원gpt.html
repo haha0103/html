@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수목원 안내</title>
+  <!-- Font Awesome CDN (아이콘용) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #daffda;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 네비게이션 */
+    nav {
+      background: #4CAF50;
+      padding: 12px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    /* 드롭다운 */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    nav ul li ul li {
+      padding: 5px 0;
+    }
+
+    nav ul li ul li a {
+      color: #333;
+      font-weight: normal;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    /* 콘텐츠 박스 */
+    .content {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .box {
+      background: #f2fff2;
+      border: 1px solid lightblue;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+
+    h1 {
+      color: #2e7d32;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    h1 .toggle-icon {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    /* 나무위키 스타일 접기/펼치기 */
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, padding 0.5s ease;
+      background-color: #e8f5e9; /* 배경색 변경 */
+      padding: 0 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .collapsible-content.open {
+      padding: 15px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* 교통안내 아이콘 간격 */
+    ul li i {
+      margin-right: 8px;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fas fa-tree"></i>수목원</a>
+        <ul>
+          <li><a href="#"><i class="fas fa-info-circle"></i>소개</a></li>
+          <li><a href="#"><i class="fas fa-history"></i>역사</a></li>
+          <li><a href="#"><i class="fas fa-leaf"></i>주요 식물</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-map-marker-alt"></i>방문안내</a>
+        <ul>
+          <li><a href="#"><i class="fas fa-money-bill"></i>이용 요금</a></li>
+          <li><a href="#"><i class="fas fa-bus"></i>교통 안내</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-eye"></i>관람안내</a>
+        <ul>
+          <li><a href="#"><i class="fas fa-exclamation-circle"></i>관람 유의사항</a></li>
+          <li><a href="#"><i class="fas fa-building"></i>시설 안내</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-hands-helping"></i>체험</a>
+        <ul>
+          <li><a href="#"><i class="fas fa-user"></i>개인 체험</a></li>
+          <li><a href="#"><i class="fas fa-users"></i>단체 체험</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-headset"></i>고객센터</a>
+        <ul>
+          <li><a href="#"><i class="fas fa-question-circle"></i>문의</a></li>
+          <li><a href="#"><i class="fas fa-list"></i>FAQ</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-bullhorn"></i>공지사항</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <img src="images/kamille-pildeu.jpg" alt="수목원 풍경">
+    <h1 id="toggle-btn"><span class="toggle-icon">+</span> 방문안내</h1>
+    <div class="collapsible-content" id="collapsible-content">
+      <h2>1. 이용요금</h2>
+      <p class="box">평일: 8,000원<br>주말/공휴일: 10,000원</p>
+      <h2>2. 교통안내</h2>
+        <p><i class="fas fa-bus"></i>버스: 터미널(서울 또는 지방 터미널 등)에서 출발하여 양평 터미널 도착</p>
+        <p><i class="fas fa-subway"></i>지하철: 용산역 또는 청량리역에서 출발하여 용문역 도착</p>
+        <p><i class="fas fa-taxi"></i>택시: 양평 터미널이나 용문역 터미널 이용</p>
+      <h2>3. 관람 유의사항</h2>
+      <p class="box">※ 수목원은 자연과 더불어 사는 우리 인간에게 매우 소중한 존재입니다.<br>
+      식물이나 시설을 훼손하거나 타인에게 방해가 되는 행동은 삼가시기 바랍니다.<br>
+      방문해주신 모든 분께 감사드립니다.^^</p>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const collapsibleContent = document.getElementById('collapsible-content');
+    const icon = toggleBtn.querySelector('.toggle-icon');
+
+    toggleBtn.addEventListener('click', () => {
+      if (collapsibleContent.classList.contains('open')) {
+        collapsibleContent.style.maxHeight = '0';
+        collapsibleContent.classList.remove('open');
+        icon.textContent = "+";
+      } else {
+        collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + "px";
+        collapsibleContent.classList.add('open');
+        icon.textContent = "-";
+      }
+    });
+  </script>
+</body>
+</html>

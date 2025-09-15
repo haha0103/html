@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>웹문서 레이아웃</title>
+    <style>
+        nav > ul{list-style: none;} /* a >  b : a안에 있는 b를 함 */
+        a{text-decoration: none;}
+        nav ul li{  /* nav > ul > li */
+            display: inline-block; /* 블록인데 가로로 배치 */
+            width: 100px;
+            height: 40px;
+            line-height: 40px;  /* 세로로 중앙 배치 */
+            text-align: center; /* 가로로 중앙 배치 */
+            margin: 10px;
+            border: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
